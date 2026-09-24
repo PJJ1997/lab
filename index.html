@@ -30,29 +30,100 @@
         </section>
 
         <nav class="site-nav" aria-label="Primary navigation">
-          <a class="active">Home</a>
-          <a>Explore <span>⌄</span></a>
-          <a>Engage <span>⌄</span></a>
-          <a>Resources <span>⌄</span></a>
-          <a>Ashley International</a>
-          <a>Automation Calendar</a>
-          <a>Calendar</a>
-          <a>···</a>
-          <a>Edit navigation</a>
-          <span class="nav-spacer"></span>
-          <a>Private group</a>
-          <a>☆ Add to favorites</a>
-          <a>♙ 30 members</a>
+          <ul class="nav-list">
+            <li><a class="top-nav-link active" href="#">Home</a></li>
+            <li class="has-menu">
+              <button class="top-nav-link">Knowledge <span>⌄</span></button>
+              <div class="dropdown wide-menu">
+                <a href="#"><strong>Product &amp; Materials</strong></a>
+                <a href="#"><strong>Manufacturing &amp; Process</strong></a>
+                <a href="#"><strong>Automation &amp; Robotics</strong></a>
+                <a href="#"><strong>Technology &amp; Innovation</strong></a>
+              </div>
+            </li>
+            <li class="has-menu">
+              <button class="top-nav-link">Factories <span>⌄</span></button>
+              <div class="dropdown">
+                <a href="#"><strong>Arcadia</strong></a>
+                <a href="#"><strong>Advance</strong></a>
+                <a href="#"><strong>Ecru</strong></a>
+              </div>
+            </li>
+            <li class="has-menu">
+              <button class="top-nav-link">Vendors <span>⌄</span></button>
+              <div class="dropdown">
+                <a href="#"><strong>Vendor A</strong></a>
+                <a href="#"><strong>Vendor B</strong></a>
+                <a href="#"><strong>Vendor C</strong></a>
+              </div>
+            </li>
+            <li class="has-menu">
+              <button class="top-nav-link">Resources <span>⌄</span></button>
+              <div class="dropdown wide-menu">
+                <a href="#"><strong>Templates</strong></a>
+                <a href="#"><strong>Standards &amp; Guidelines</strong></a>
+                <a href="#"><strong>Training &amp; Reference</strong></a>
+                <a href="#"><strong>Tools &amp; Links</strong></a>
+              </div>
+            </li>
+            <li class="has-menu">
+              <button class="top-nav-link">Team <span>⌄</span></button>
+              <div class="dropdown wide-menu">
+                <a href="#"><strong>Organization</strong></a>
+                <a href="#"><strong>People &amp; Expertise</strong></a>
+              </div>
+            </li>
+          </ul>
         </nav>
 
-        <section class="mosaic" aria-label="Innovation hubs">
-          <a class="tile feature" aria-label="Product & Process Innovation"><span>Product &amp; Process Innovation</span></a>
-          <div class="secondary-grid">
-            <a class="tile vendor" aria-label="Vendor Management"><span>Vendor Management</span></a>
-            <a class="tile additive" aria-label="Additive Manufacturing"><span>Additive Manufacturing</span></a>
-            <a class="tile process" aria-label="Process Intelligence Hub"><span>Process Intelligence Hub</span></a>
-            <a class="tile analysis" aria-label="Strategic Analysis Hub"><span>Strategic Analysis Hub</span></a>
-          </div>
+        <section class="home-content" aria-label="Home content">
+          <section class="home-hero">
+            <div class="hero-copy">
+              <h2>Driving Innovation<br />for a Smarter Tomorrow</h2>
+              <p>We explore new technologies, improve manufacturing processes,<br />and collaborate with partners to create a more efficient, innovative,<br />and sustainable future for Ashley.</p>
+              <a href="#knowledge" class="hero-cta">Explore Our Work <span>→</span></a>
+            </div>
+          </section>
+
+          <section class="content-section quick-access" aria-labelledby="quick-title">
+            <div class="section-heading"><h2 id="quick-title">Quick Access</h2><a href="#">View all&nbsp; →</a></div>
+            <div class="quick-grid">
+              <a class="quick-card" href="#"><span class="quick-icon blue">▤</span><strong>Knowledge</strong><small>Explore technical<br />knowledge and insights</small><b>→</b></a>
+              <a class="quick-card" href="#"><span class="quick-icon purple">▥</span><strong>Factories</strong><small>Find factory-specific<br />information</small><b>→</b></a>
+              <a class="quick-card" href="#"><span class="quick-icon green">♟</span><strong>Vendors</strong><small>Discover vendor<br />information and resources</small><b>→</b></a>
+              <a class="quick-card" href="#"><span class="quick-icon orange">▧</span><strong>Resources</strong><small>Access templates,<br />guidelines and tools</small><b>→</b></a>
+              <a class="quick-card" href="#"><span class="quick-icon blue">♟</span><strong>Team</strong><small>Meet our team and<br />learn more about us</small><b>→</b></a>
+            </div>
+          </section>
+
+          <section class="updates-featured content-section">
+            <div class="updates-column">
+              <div class="section-heading"><h2>Latest Updates</h2><a href="#">View all&nbsp; →</a></div>
+              <div class="updates-list">
+                <a class="update-row" href="#"><img src="static-assets/home/update-automation.png" alt="Automated material handling" /><span><em class="tag knowledge">Knowledge</em><strong>Automation in Material Handling: Key Trends and Opportunities</strong></span><time>Sep 20, 2026</time></a>
+                <a class="update-row" href="#"><img src="static-assets/home/update-factory.png" alt="Factory robotics" /><span><em class="tag factory">Factory</em><strong>Ecru Factory – New Robotics Pilot Program</strong></span><time>Sep 18, 2026</time></a>
+                <a class="update-row" href="#"><img src="static-assets/home/update-vendor.png" alt="Vendor partnership" /><span><em class="tag vendor-tag">Vendor</em><strong>New Vendor Added: XYZ Automation</strong></span><time>Sep 15, 2026</time></a>
+                <a class="update-row" href="#"><img src="static-assets/home/update-resource.png" alt="Project documents" /><span><em class="tag resource">Resource</em><strong>Project Handover Template Updated</strong></span><time>Sep 12, 2026</time></a>
+              </div>
+            </div>
+            <div class="featured-column">
+              <h2>Featured Content</h2>
+              <article class="featured-card">
+                <img src="static-assets/home/featured-robot.png" alt="Autonomous material handling robot" />
+                <div><em>Featured</em><h3>Automation in Material Handling:<br />Key Trends and Opportunities</h3><p>Explore the latest trends in AGV/AMR, ASRS, and intelligent material handling systems, and how they can create value for Ashley.</p><a href="#">Read more&nbsp; →</a></div>
+              </article>
+            </div>
+          </section>
+
+          <section class="knowledge-section content-section" id="knowledge">
+            <div class="section-heading knowledge-heading"><div><h2>Knowledge Areas</h2><p>Explore our core focus areas and recent highlights.</p></div><a href="#">View all knowledge&nbsp; →</a></div>
+            <div class="knowledge-grid">
+              <a class="knowledge-card" href="#"><img src="static-assets/home/knowledge-materials.png" alt="Materials" /><span><strong>Product &amp; Materials</strong><small>Materials, components and product design.</small></span></a>
+              <a class="knowledge-card" href="#"><img src="static-assets/home/knowledge-process.png" alt="Manufacturing line" /><span><strong>Manufacturing &amp; Process</strong><small>Manufacturing methods and<br />production processes.</small><b>→</b></span></a>
+              <a class="knowledge-card" href="#"><img src="static-assets/home/knowledge-robotics.png" alt="Industrial robot" /><span><strong>Automation &amp; Robotics</strong><small>Automation, robotics, and<br />intelligent manufacturing.</small><b>→</b></span></a>
+              <a class="knowledge-card" href="#"><img src="static-assets/home/knowledge-technology.png" alt="Emerging technology" /><span><strong>Technology &amp; Innovation</strong><small>New technologies, research and<br />innovative solutions.</small><b>→</b></span></a>
+            </div>
+          </section>
         </section>
       </main>
     </div>
