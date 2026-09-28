@@ -107,3 +107,17 @@ grep -q '.featured-resources-grid' styles.css
 grep -q '.resource-quick-grid' styles.css
 
 echo "Resources page checks passed."
+
+grep -q '<a class="top-nav-link" href="#team">Team</a>' index.html
+test "$(grep -c '<button class="top-nav-link">Team' index.html || true)" -eq 0
+grep -q 'class="team-page" id="team"' index.html
+grep -q '<h2>Our Team</h2>' index.html
+grep -q 'class="organization-panel"' index.html
+grep -q 'placeholder="Search people..."' index.html
+test "$(grep -c 'class="person-card"' index.html)" -eq 23
+test "$(grep -c 'class="team-report-group"' index.html)" -eq 2
+grep -q '.team-page:target' styles.css
+grep -q '.organization-tree' styles.css
+grep -q '.team-members-grid' styles.css
+
+echo "Team page checks passed."
