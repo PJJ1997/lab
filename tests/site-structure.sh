@@ -1,6 +1,18 @@
 #!/bin/sh
 set -eu
 
+grep -q '<section class="home-content"' index.html
+grep -q 'Strategic Innovation &amp;<br />Emerging Technology' index.html
+test "$(grep -c 'class="quick-card"' index.html)" -eq 5
+test "$(grep -c 'class="home-update-row"' index.html)" -eq 4
+test "$(grep -c 'class="knowledge-card"' index.html)" -eq 3
+grep -q '<strong>Product &amp; Materials</strong>' index.html
+grep -q '<strong>Manufacturing &amp; Automation</strong>' index.html
+grep -q '<strong>Technology &amp; Innovation</strong>' index.html
+grep -q '.home-updates-table' styles.css
+
+echo "Home page checks passed."
+
 topics="adjustable-bases upholstery-products mechanisms-components foam-cushioning materials product-design"
 
 for topic in $topics; do
