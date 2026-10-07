@@ -62,7 +62,7 @@ button, a { cursor:pointer; }
 .section-heading { min-height:44px; display:flex; align-items:center; justify-content:space-between; }
 .section-heading h2, .featured-column > h2 { margin:0; color:#0e1e31; font-size:17px; }
 .section-heading > a, .featured-card a { color:#0879f9; font-size:12px; font-weight:600; }
-.quick-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:13px; }
+.quick-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:13px; }
 .quick-card { position:relative; min-height:62px; padding:10px 12px 10px 66px; display:flex; flex-direction:column; justify-content:center; border:1px solid #dbe3eb; border-radius:7px; color:#0e1e31; box-shadow:0 3px 12px rgba(30,60,90,.04); }
 .quick-card:hover { border-color:#a8c7e8; background:#f8fbff; }
 .quick-card strong { margin:0 0 3px; font-size:12px; }
